@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA73BD5519CC0D4F00615FE8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73BD5419CC0D4F00615FE8 /* WelcomeViewController.swift */; };
 		BAFE513F19CB59A500CDEBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE513E19CB59A500CDEBC4 /* AppDelegate.swift */; };
-		BAFE514119CB59A500CDEBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE514019CB59A500CDEBC4 /* ViewController.swift */; };
 		BAFE514419CB59A500CDEBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFE514219CB59A500CDEBC4 /* Main.storyboard */; };
 		BAFE514619CB59A500CDEBC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFE514519CB59A500CDEBC4 /* Images.xcassets */; };
 		BAFE514919CB59A500CDEBC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAFE514719CB59A500CDEBC4 /* LaunchScreen.xib */; };
 		BAFE515519CB59A500CDEBC4 /* carouselMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE515419CB59A500CDEBC4 /* carouselMockTests.swift */; };
+		BAFE515F19CB690700CDEBC4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE515E19CB690700CDEBC4 /* IntroViewController.swift */; };
+		BAFE516119CBCB6600CDEBC4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE516019CBCB6600CDEBC4 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA73BD5419CC0D4F00615FE8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BAFE513919CB59A500CDEBC4 /* carouselMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carouselMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFE513D19CB59A500CDEBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFE513E19CB59A500CDEBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAFE514019CB59A500CDEBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAFE514319CB59A500CDEBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFE514519CB59A500CDEBC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAFE514819CB59A500CDEBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAFE514E19CB59A500CDEBC4 /* carouselMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carouselMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFE515319CB59A500CDEBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFE515419CB59A500CDEBC4 /* carouselMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carouselMockTests.swift; sourceTree = "<group>"; };
+		BAFE515E19CB690700CDEBC4 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		BAFE516019CBCB6600CDEBC4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				BAFE513E19CB59A500CDEBC4 /* AppDelegate.swift */,
-				BAFE514019CB59A500CDEBC4 /* ViewController.swift */,
 				BAFE514219CB59A500CDEBC4 /* Main.storyboard */,
+				BA73BD5419CC0D4F00615FE8 /* WelcomeViewController.swift */,
+				BAFE515E19CB690700CDEBC4 /* IntroViewController.swift */,
 				BAFE514519CB59A500CDEBC4 /* Images.xcassets */,
+				BAFE516019CBCB6600CDEBC4 /* SignInViewController.swift */,
 				BAFE514719CB59A500CDEBC4 /* LaunchScreen.xib */,
 				BAFE513C19CB59A500CDEBC4 /* Supporting Files */,
 			);
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAFE514119CB59A500CDEBC4 /* ViewController.swift in Sources */,
 				BAFE513F19CB59A500CDEBC4 /* AppDelegate.swift in Sources */,
+				BA73BD5519CC0D4F00615FE8 /* WelcomeViewController.swift in Sources */,
+				BAFE515F19CB690700CDEBC4 /* IntroViewController.swift in Sources */,
+				BAFE516119CBCB6600CDEBC4 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				BAFE515A19CB59A500CDEBC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAFE515B19CB59A500CDEBC4 /* Build configuration list for PBXNativeTarget "carouselMockTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				BAFE515D19CB59A500CDEBC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
