@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  TermsViewController.swift
 //  carouselMock
 //
 //  Created by Henry Freel on 9/20/14.
@@ -8,20 +8,18 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class TermsViewController: UIViewController {
 
-    @IBOutlet weak var feedScrollVoew: UIScrollView!
-    @IBOutlet weak var feedImage: UIImageView!
-    @IBOutlet weak var learnMoreButton: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        feedScrollVoew.contentSize = feedImage.image!.size
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func didPressDoneButton(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

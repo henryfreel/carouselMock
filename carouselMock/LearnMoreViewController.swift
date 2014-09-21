@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  LearnMoreViewController.swift
 //  carouselMock
 //
 //  Created by Henry Freel on 9/20/14.
@@ -8,16 +8,10 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class LearnMoreViewController: UIViewController {
 
-    @IBOutlet weak var feedScrollVoew: UIScrollView!
-    @IBOutlet weak var feedImage: UIImageView!
-    @IBOutlet weak var learnMoreButton: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        feedScrollVoew.contentSize = feedImage.image!.size
 
         // Do any additional setup after loading the view.
     }
@@ -27,6 +21,9 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didPressCancel(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

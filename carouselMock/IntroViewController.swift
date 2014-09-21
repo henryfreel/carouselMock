@@ -28,22 +28,53 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         return value * ratio + r2Min - r1Min * ratio
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         introScrollView.contentSize = introImage.image!.size
         introScrollView.delegate = self
-        introScrollView.sendSubviewToBack(introImage)
-        
+        //introScrollView.sendSubviewToBack(introImage)
 
-        // Do any additional setup after loading the view.
+        /*--------------Intro1Image--------------*/
+        intro1Image.transform = CGAffineTransformMakeTranslation(-70, -295)
+        intro1Image.transform = CGAffineTransformScale(intro1Image.transform, 1, 1)
+        intro1Image.transform = CGAffineTransformRotate(intro1Image.transform, CGFloat(Double(-15) * M_PI / 180))
+        
+        /*--------------Intro2Image--------------*/
+        intro2Image.transform = CGAffineTransformMakeTranslation(35, -270)
+        intro2Image.transform = CGAffineTransformScale(intro2Image.transform, 1.65, 1.65)
+        intro2Image.transform = CGAffineTransformRotate(intro2Image.transform, CGFloat(Double(-10) * M_PI / 180))
+        
+        /*--------------Intro3Image--------------*/
+        intro3Image.transform = CGAffineTransformMakeTranslation(10, -437)
+        intro3Image.transform = CGAffineTransformScale(intro3Image.transform, 1.7, 1.7)
+        intro3Image.transform = CGAffineTransformRotate(intro3Image.transform, CGFloat(Double(10) * M_PI / 180))
+        
+        /*--------------Intro4Image--------------*/
+        intro4Image.transform = CGAffineTransformMakeTranslation(78, -408)
+        intro4Image.transform = CGAffineTransformScale(intro4Image.transform, 1.6, 1.6)
+        intro4Image.transform = CGAffineTransformRotate(intro4Image.transform, CGFloat(Double(10) * M_PI / 180))
+        
+        /*--------------Intro5Image--------------*/
+        intro5Image.transform = CGAffineTransformMakeTranslation(-108, -515)
+        intro5Image.transform = CGAffineTransformScale(intro5Image.transform, 1.6, 1.6)
+        intro5Image.transform = CGAffineTransformRotate(intro5Image.transform, CGFloat(Double(10) * M_PI / 180))
+        
+        /*--------------Intro6Image--------------*/
+        intro6Image.transform = CGAffineTransformMakeTranslation(-95, -500)
+        intro6Image.transform = CGAffineTransformScale(intro6Image.transform, 1.65, 1.65)
+        intro6Image.transform = CGAffineTransformRotate(intro6Image.transform, CGFloat(Double(-10) * M_PI / 180))
+        
     }
 
     
     func scrollViewDidScroll(introScrollView: UIScrollView) {
        
         var offset = Float(introScrollView.contentOffset.y)
+        
+        println(offset)
+        
+        if (offset < 568) && (offset > 0) {
         
         /*--------------Intro1Image--------------*/
         
@@ -88,7 +119,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         intro4Image.transform = CGAffineTransformMakeTranslation(CGFloat(tx4), CGFloat(ty4))
         intro4Image.transform = CGAffineTransformScale(intro4Image.transform, CGFloat(scale4), CGFloat(scale4))
         intro4Image.transform = CGAffineTransformRotate(intro4Image.transform, CGFloat(Double(rotation4) * M_PI / 180))
-        
+            
         /*--------------Intro5Image--------------*/
         
         var tx5 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -108, r2Max: 0)
@@ -110,6 +141,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         intro6Image.transform = CGAffineTransformMakeTranslation(CGFloat(tx6), CGFloat(ty6))
         intro6Image.transform = CGAffineTransformScale(intro6Image.transform, CGFloat(scale6), CGFloat(scale6))
         intro6Image.transform = CGAffineTransformRotate(intro6Image.transform, CGFloat(Double(rotation6) * M_PI / 180))
+        }
         
         
     }
