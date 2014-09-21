@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        takeCarouselButton.hidden = true
+        takeCarouselButton.alpha = 0
         
         welcomeScrollView.contentSize = CGSizeMake(1280, 568)
         welcomeScrollView.delegate = self
@@ -34,10 +34,14 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         var page = Int(welcomeScrollView.contentOffset.x / 320)
         pageControl.currentPage = page
         
-        println("This is it \(welcomeScrollView.contentOffset.x)")
+        //println("This is it \(welcomeScrollView.contentOffset.x)")
         
         if (welcomeScrollView.contentOffset.x == 960) {
-            takeCarouselButton.hidden = false
+            
+            UIView.animateWithDuration(1.0) {
+                self.takeCarouselButton.alpha = 1
+            }
+            
         }
         
     }
