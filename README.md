@@ -46,7 +46,7 @@ Settings
   * [x] User can log out
   
 Optional: Learn more about Carousel
-  * [ ] Optional: Show the "Learn more about Carousel" button in the photo timeline.
+  * [x] Optional: Show the "Learn more about Carousel" button in the photo timeline.
   * [ ] Optional: Tap the X to dismiss the banner
   * [ ] Optional: Track the 3 events:
      View a photo full screen
