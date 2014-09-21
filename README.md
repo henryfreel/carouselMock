@@ -6,7 +6,7 @@ Week 2 Homework
 
 Time Spent
 -
-10 Hours
+idk, i think a lot more than 10 though
 
 
 
