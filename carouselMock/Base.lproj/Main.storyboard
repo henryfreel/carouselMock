@@ -947,10 +947,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OJf-ss-NRc"/>
-        <segue reference="ljS-Vl-JTT"/>
-        <segue reference="Gaq-da-A3s"/>
         <segue reference="R5p-TR-9Ys"/>
         <segue reference="xkj-qn-bpa"/>
+        <segue reference="Gaq-da-A3s"/>
+        <segue reference="OJf-ss-NRc"/>
+        <segue reference="ljS-Vl-JTT"/>
     </inferredMetricsTieBreakers>
 </document>
