@@ -10,6 +10,7 @@
 		BA73BD5519CC0D4F00615FE8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73BD5419CC0D4F00615FE8 /* WelcomeViewController.swift */; };
 		BA7D6A5919D15C5A009A44C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D6A5819D15C5A009A44C0 /* DetailViewController.swift */; };
 		BA7D6A5B19D15E62009A44C0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D6A5A19D15E62009A44C0 /* ShareViewController.swift */; };
+		BAF665C719D27D2000C66FFF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF665C619D27D2000C66FFF /* ConversationViewController.swift */; };
 		BAFB822419CE319C0037A5BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB822319CE319C0037A5BC /* FeedViewController.swift */; };
 		BAFB822619CE58910037A5BC /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB822519CE58910037A5BC /* ConversationsViewController.swift */; };
 		BAFB822819CE5A130037A5BC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB822719CE5A130037A5BC /* SettingsViewController.swift */; };
@@ -39,6 +40,7 @@
 		BA73BD5419CC0D4F00615FE8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BA7D6A5819D15C5A009A44C0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BA7D6A5A19D15E62009A44C0 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		BAF665C619D27D2000C66FFF /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		BAFB822319CE319C0037A5BC /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BAFB822519CE58910037A5BC /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		BAFB822719CE5A130037A5BC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				BAFE513E19CB59A500CDEBC4 /* AppDelegate.swift */,
 				BAFE514219CB59A500CDEBC4 /* Main.storyboard */,
+				BAF665C619D27D2000C66FFF /* ConversationViewController.swift */,
 				BA7D6A5A19D15E62009A44C0 /* ShareViewController.swift */,
 				BA7D6A5819D15C5A009A44C0 /* DetailViewController.swift */,
 				BAFB822D19CEA6350037A5BC /* LearnMoreViewController.swift */,
@@ -246,6 +249,7 @@
 				BA7D6A5919D15C5A009A44C0 /* DetailViewController.swift in Sources */,
 				BAFE513F19CB59A500CDEBC4 /* AppDelegate.swift in Sources */,
 				BA73BD5519CC0D4F00615FE8 /* WelcomeViewController.swift in Sources */,
+				BAF665C719D27D2000C66FFF /* ConversationViewController.swift in Sources */,
 				BAFB822E19CEA6350037A5BC /* LearnMoreViewController.swift in Sources */,
 				BAFB822819CE5A130037A5BC /* SettingsViewController.swift in Sources */,
 				BAFB822419CE319C0037A5BC /* FeedViewController.swift in Sources */,

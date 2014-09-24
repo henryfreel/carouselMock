@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wDj-EV-IfJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="32f-II-ZQg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -493,6 +493,16 @@
                                     <segue destination="70D-WY-JiR" kind="modal" modalTransitionStyle="crossDissolve" id="gpF-jP-SS8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2vg-Gz-gFs">
+                                <rect key="frame" x="0.0" y="166" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tVx-kH-Jhz" kind="modal" modalTransitionStyle="crossDissolve" id="cJO-e8-Qca"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -500,6 +510,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6g-TH-cb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3549" y="-1248"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="46x-Ar-EIv">
+            <objects>
+                <viewController id="tVx-kH-Jhz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="txZ-aT-eNT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="image-7" id="yI3-pN-iPm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zLt-Tv-apq">
+                                <rect key="frame" x="263" y="314" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zsG-t5-kf4" kind="modal" modalTransitionStyle="crossDissolve" id="S4Q-Nz-bCe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuh-39-XLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3992" y="-1248"/>
+        </scene>
+        <!--Conversation View Controller-->
+        <scene sceneID="Ddy-jD-89y">
+            <objects>
+                <viewController id="zsG-t5-kf4" customClass="ConversationViewController" customModule="carouselMock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cEn-2K-iay">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="image-8" id="GRn-Xu-qrN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gDD-pE-v1r">
+                                <rect key="frame" x="9" y="25" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rjH-eb-ulQ" kind="modal" modalTransitionStyle="crossDissolve" id="JDS-c1-Thh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmg-M7-9rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4452" y="-1248"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="EDQ-Dt-jza">
@@ -516,6 +586,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo-1" id="qdm-4i-UoN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo-6" id="wHz-mw-cWz">
                                 <rect key="frame" x="0.0" y="124" width="320" height="320"/>
@@ -523,6 +594,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PAp-EY-oBU" appends="YES" id="DDf-ay-rED"/>
+                                    <outletCollection property="gestureRecognizers" destination="KiG-Su-MRY" appends="YES" id="cYO-WE-3il"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -533,6 +605,7 @@
                         <outlet property="backgroundImage2" destination="l9R-lc-RwT" id="C1E-lN-sOb"/>
                         <outlet property="photoView" destination="wHz-mw-cWz" id="qMa-56-tfQ"/>
                         <segue destination="70D-WY-JiR" kind="modal" identifier="shareSegue" animates="NO" id="Gaq-da-A3s"/>
+                        <segue destination="wDj-EV-IfJ" kind="modal" identifier="backToFeedSegue" modalTransitionStyle="crossDissolve" id="DAQ-nc-Toj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mt7-u0-F5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -541,6 +614,11 @@
                         <action selector="didSwipeUp:" destination="p3i-NS-WYh" id="k71-ps-b5p"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer id="KiG-Su-MRY">
+                    <connections>
+                        <action selector="onTap:" destination="p3i-NS-WYh" id="0zM-Di-nGT"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3114" y="-589"/>
         </scene>
@@ -560,15 +638,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="egX-6H-yXa">
-                                        <rect key="frame" x="109" y="300" width="106" height="108"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="egX-6H-yXa">
+                                        <rect key="frame" x="109" y="301" width="106" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.91622090339660645" green="0.08457135409116745" blue="0.02157098799943924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="photo-6">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="p3i-NS-WYh" kind="modal" modalTransitionStyle="crossDissolve" id="YwH-8v-aI4"/>
+                                            <action selector="didPressImage:" destination="wDj-EV-IfJ" eventType="touchUpInside" id="EVW-sb-tJU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -592,7 +670,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rjH-eb-ulQ" kind="push" id="ljS-Vl-JTT"/>
+                                    <segue destination="rjH-eb-ulQ" kind="modal" modalTransitionStyle="crossDissolve" id="ljS-Vl-JTT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G38-6u-p3V">
@@ -616,12 +694,17 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.023529414087533951" green="0.023529414087533951" blue="0.023529414087533951" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cw7-VW-Kh5"/>
                     <connections>
+                        <outlet property="dateImage" destination="Lsr-lE-687" id="LmS-cI-Pai"/>
                         <outlet property="feedImage" destination="ebw-sR-Pwi" id="2CL-LJ-bu2"/>
                         <outlet property="feedScrollVoew" destination="c7f-gc-65e" id="avJ-W9-Xrm"/>
+                        <outlet property="learnMoreImage" destination="vhx-Fs-4aB" id="pY3-Ji-PXr"/>
+                        <outlet property="navImage" destination="0F0-iN-d3h" id="lNp-6R-DPj"/>
+                        <outlet property="photo" destination="egX-6H-yXa" id="oTy-sy-UmK"/>
+                        <segue destination="p3i-NS-WYh" kind="modal" identifier="detailSegue" animates="NO" id="8gO-nb-5hG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXd-nK-GJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -645,6 +728,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="image-9" id="rMa-8S-YNB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X1d-sc-4Dp">
                                 <rect key="frame" x="11" y="26" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -661,6 +748,8 @@
                     <navigationItem key="navigationItem" id="ELj-pk-hXE"/>
                     <connections>
                         <outlet property="backButton" destination="X1d-sc-4Dp" id="2z4-yZ-rUE"/>
+                        <outlet property="newImage" destination="rMa-8S-YNB" id="nnS-Zh-XES"/>
+                        <segue destination="wDj-EV-IfJ" kind="modal" identifier="backtoFeedSegue" modalTransitionStyle="crossDissolve" id="OJf-ss-NRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ye1-F9-pLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -814,6 +903,9 @@
         <image name="example" width="640" height="1136"/>
         <image name="feed" width="320" height="1564"/>
         <image name="feed_nav" width="320" height="65"/>
+        <image name="image-7" width="320" height="568"/>
+        <image name="image-8" width="320" height="568"/>
+        <image name="image-9" width="320" height="568"/>
         <image name="intro" width="320" height="1136"/>
         <image name="intro_tile1" width="153" height="152"/>
         <image name="intro_tile2" width="76" height="75"/>
@@ -844,7 +936,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="scm-Le-BSs"/>
+        <segue reference="OJf-ss-NRc"/>
+        <segue reference="ljS-Vl-JTT"/>
         <segue reference="Gaq-da-A3s"/>
+        <segue reference="scm-Le-BSs"/>
     </inferredMetricsTieBreakers>
 </document>

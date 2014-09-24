@@ -41,8 +41,24 @@ class DetailViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        self.backgroundImage.alpha = 1
+        self.backgroundImage.alpha = 0
         self.photoView.frame = CGRectMake(0, 127, 320, 320)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.backgroundImage.alpha = 1
+        })
     }
 
+    @IBAction func onTap(sender: UITapGestureRecognizer) {
+        
+        performSegueWithIdentifier("backToFeedSegue", sender: self)
+        
+    }
 }
+
+
+
+
+
+
+
