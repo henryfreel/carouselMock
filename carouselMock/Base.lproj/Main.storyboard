@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="32f-II-ZQg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PWd-tS-XwZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -51,7 +51,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="JoB-iP-7Sr" kind="push" id="QRZ-xO-0Hp"/>
+                                            <segue destination="JoB-iP-7Sr" kind="modal" modalTransitionStyle="crossDissolve" id="QRZ-xO-0Hp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ygs-aZ-ebo">
@@ -182,6 +182,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="vGU-Cl-SAf" kind="modal" modalTransitionStyle="crossDissolve" id="scm-Le-BSs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ju5-Uu-3vo">
+                                <rect key="frame" x="14" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lMi-jP-wEw" kind="modal" modalTransitionStyle="crossDissolve" id="VvJ-AV-XnB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -318,14 +328,14 @@
                                     <outletCollection property="gestureRecognizers" destination="oZF-hD-qCb" appends="YES" id="XvO-1r-2Ju"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CQG-xn-H1U">
-                                <rect key="frame" x="8" y="28" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CFZ-eW-Mld">
+                                <rect key="frame" x="9" y="27" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressBackButton:" destination="JoB-iP-7Sr" eventType="touchUpInside" id="sAY-X4-LbR"/>
+                                    <segue destination="lMi-jP-wEw" kind="modal" modalTransitionStyle="crossDissolve" id="R5p-TR-9Ys"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -748,6 +758,7 @@
                     <navigationItem key="navigationItem" id="ELj-pk-hXE"/>
                     <connections>
                         <outlet property="backButton" destination="X1d-sc-4Dp" id="2z4-yZ-rUE"/>
+                        <outlet property="backgroundImage" destination="VNJ-fP-oBN" id="kd1-gk-U0s"/>
                         <outlet property="newImage" destination="rMa-8S-YNB" id="nnS-Zh-XES"/>
                         <segue destination="wDj-EV-IfJ" kind="modal" identifier="backtoFeedSegue" modalTransitionStyle="crossDissolve" id="OJf-ss-NRc"/>
                     </connections>
@@ -939,6 +950,7 @@
         <segue reference="OJf-ss-NRc"/>
         <segue reference="ljS-Vl-JTT"/>
         <segue reference="Gaq-da-A3s"/>
-        <segue reference="scm-Le-BSs"/>
+        <segue reference="R5p-TR-9Ys"/>
+        <segue reference="xkj-qn-bpa"/>
     </inferredMetricsTieBreakers>
 </document>

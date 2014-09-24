@@ -11,6 +11,7 @@ import UIKit
 class ConversationsViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var newImage: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     var defaults = NSUserDefaults.standardUserDefaults()
     
@@ -34,6 +35,8 @@ class ConversationsViewController: UIViewController {
         
         if (initalVal == 1) {
             println("you shared")
+            
+            backgroundImage.hidden = true
             newImage.hidden = false
             
         }

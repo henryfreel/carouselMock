@@ -44,9 +44,7 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func didPressBackButton(sender: UIButton) {
-        navigationController?.popToRootViewControllerAnimated(true)
-    }
+
     
     /*-------------Text Field Conditionals START------------*/
     
