@@ -52,8 +52,8 @@ class CreateDropboxViewController: UIViewController {
             println("Show!")
             
             self.createScrollView.contentOffset.y = 130
-            self.createImage.center.y = 310
-            self.createButton.center.y = 310
+            self.createImage.center.y = 305
+            self.createButton.center.y = 305
             
             // Set view properties in here that you want to match with the animation of the keyboard
             // If you need it, you can use the kbSize property above to get the keyboard width and height.

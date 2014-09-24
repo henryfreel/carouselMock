@@ -9,31 +9,21 @@
 import UIKit
 
 class TermsViewController: UIViewController {
+    @IBOutlet weak var termsWebView: UIWebView!
+    @IBOutlet weak var doneButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let url = NSURL(string: "https://dropbox.com/terms?mobile=1")
+        let request = NSURLRequest(URL: url)
+        termsWebView.loadRequest(request)
+        
     }
-
+    
+    
     @IBAction func didPressDoneButton(sender: UIButton) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

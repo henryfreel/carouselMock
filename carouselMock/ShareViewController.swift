@@ -1,23 +1,25 @@
 //
-//  FeedViewController.swift
+//  ShareViewController.swift
 //  carouselMock
 //
-//  Created by Henry Freel on 9/20/14.
+//  Created by Henry Freel on 9/23/14.
 //  Copyright (c) 2014 Henry Freel. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class ShareViewController: UIViewController {
+    @IBOutlet weak var backgroundImage: UIImageView!
 
-    @IBOutlet weak var feedScrollVoew: UIScrollView!
-    @IBOutlet weak var feedImage: UIImageView!
-    @IBOutlet weak var learnMoreButton: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImage.alpha = 0
         
-        feedScrollVoew.contentSize = feedImage.image!.size
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: nil, animations: {
+            
+        self.backgroundImage.alpha = 1
+            
+    }, nil)
 
         // Do any additional setup after loading the view.
     }
@@ -27,15 +29,6 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didPanImage(sender: UIPanGestureRecognizer) {
-        
-        for var i = 0;i<10;i++
-        {
-            feedScrollVoew.contentOffset.y = 50
-        }
-        
-    }
-
     /*
     // MARK: - Navigation
 
