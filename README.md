@@ -6,7 +6,7 @@ Week 2 Homework
 
 Time Spent
 -
-wayyyyyyy more than 10. idk exactly how much but probably like 15-20 but i went to town on it. There were not enough hours in the day this week. 
+wayyyyyyy more than 10. idk exactly how much but probably like 15-20 but i went to town on it. There were not enough hours in the day this week. A lot of my push segues got messed up when i started adding a lot screens and using modals to go into the middle of a push flow so i had to change some of them to modals.
 
 
 User Stories
